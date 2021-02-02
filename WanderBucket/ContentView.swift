@@ -10,11 +10,19 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
+            Image("globe")
+                .padding(-20.0)
+                .clipShape(Circle())
+                .overlay(Circle().stroke(Color.white, lineWidth: 4))
+                .shadow(radius: 7)
             Text("WanderBucket")
                 .font(.title)
+                .multilineTextAlignment(.center)
                 .padding()
             Text("Not All Those Who Wander Are Lost...")
                 .font(.subheadline)
+                .multilineTextAlignment(.center)
+                
         }
     }
 }
