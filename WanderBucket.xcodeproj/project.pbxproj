@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6B8AA1C225C9C39A00E3B782 /* WanderBucketApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8AA1C125C9C39A00E3B782 /* WanderBucketApp.swift */; };
-		6B8AA1C425C9C39A00E3B782 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8AA1C325C9C39A00E3B782 /* ContentView.swift */; };
+		6B8AA1C425C9C39A00E3B782 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8AA1C325C9C39A00E3B782 /* LoginScreen.swift */; };
 		6B8AA1C625C9C39D00E3B782 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B8AA1C525C9C39D00E3B782 /* Assets.xcassets */; };
 		6B8AA1C925C9C39D00E3B782 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B8AA1C825C9C39D00E3B782 /* Preview Assets.xcassets */; };
 		6B8AA1D425C9C39D00E3B782 /* WanderBucketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8AA1D325C9C39D00E3B782 /* WanderBucketTests.swift */; };
@@ -38,7 +38,7 @@
 /* Begin PBXFileReference section */
 		6B8AA1BE25C9C39A00E3B782 /* WanderBucket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WanderBucket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B8AA1C125C9C39A00E3B782 /* WanderBucketApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WanderBucketApp.swift; sourceTree = "<group>"; };
-		6B8AA1C325C9C39A00E3B782 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6B8AA1C325C9C39A00E3B782 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		6B8AA1C525C9C39D00E3B782 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B8AA1C825C9C39D00E3B782 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6B8AA1CA25C9C39D00E3B782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -104,11 +104,11 @@
 				6B8AA1C125C9C39A00E3B782 /* WanderBucketApp.swift */,
 				6B8AA20125C9D4B800E3B782 /* MapView.swift */,
 				6BDB8C3925C9D82600174CF2 /* MapView2.swift */,
-				6B8AA1C325C9C39A00E3B782 /* ContentView.swift */,
+				6B8AA1C325C9C39A00E3B782 /* LoginScreen.swift */,
 				6B8AA1C525C9C39D00E3B782 /* Assets.xcassets */,
 				6B8AA1CA25C9C39D00E3B782 /* Info.plist */,
-				6B8AA1C725C9C39D00E3B782 /* Preview Content */,
 				6BDB8C4625CA027100174CF2 /* OnBoarding.swift */,
+				6B8AA1C725C9C39D00E3B782 /* Preview Content */,
 			);
 			path = WanderBucket;
 			sourceTree = "<group>";
@@ -269,7 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BDB8C3A25C9D82600174CF2 /* MapView2.swift in Sources */,
-				6B8AA1C425C9C39A00E3B782 /* ContentView.swift in Sources */,
+				6B8AA1C425C9C39A00E3B782 /* LoginScreen.swift in Sources */,
 				6B8AA20225C9D4B800E3B782 /* MapView.swift in Sources */,
 				6B8AA1C225C9C39A00E3B782 /* WanderBucketApp.swift in Sources */,
 				6BDB8C4725CA027100174CF2 /* OnBoarding.swift in Sources */,

@@ -11,7 +11,7 @@ import SwiftUI
 struct WanderBucketApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginScreen()
         }
     }
 }

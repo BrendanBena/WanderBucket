@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct LoginScreen: View {
     
     @State var username: String = ""
     @State var password: String = ""
@@ -39,7 +39,7 @@ struct AppTitle : View {
             .font(.largeTitle)
             .fontWeight(.bold)
             .multilineTextAlignment(.center)
-            .padding(/*@START_MENU_TOKEN@*/.all, 5.0/*@END_MENU_TOKEN@*/)
+            .padding(/*@START_MENU_TOKEN@*/.all, 15.0/*@END_MENU_TOKEN@*/)
     }
 }
 
@@ -72,8 +72,8 @@ struct UsernameField: View {
             .padding()
             .colorInvert()
             .background(Color.white)
-            .cornerRadius(5.0)
-            .padding(.horizontal, 35.0)
+            .cornerRadius(10.0)
+            .padding(.horizontal, 40.0)
     }
 }
 
@@ -85,8 +85,8 @@ struct PasswordField: View {
             .padding()
             .colorInvert()
             .background(Color.white)
-            .cornerRadius(5.0)
-            .padding(.horizontal, 35.0)
+            .cornerRadius(10.0)
+            .padding(.horizontal, 40.0)
     }
 }
 
@@ -95,7 +95,7 @@ struct LoginButton : View {
         Text("LOGIN")
             .font(.headline)
             .foregroundColor(.black)
-            .frame(width: 220, height: 45)
+            .frame(width: 235, height: 45)
             .background(Color.white)
             .cornerRadius(15.0)
     }
@@ -105,7 +105,7 @@ struct ForgotPasswordButton : View {
     var body : some View {
         Text("Don't Have an Account? Sign Up.")
         .font(.footnote)
-        .padding(.top, 10.0)
+        .padding(.top, 8.0)
     }
 }
 
@@ -113,14 +113,14 @@ struct SignUpButton : View {
     var body : some View {
         Text("Forgot Password? Click Here.")
             .font(.footnote)
-            .padding(.top, 8.0)
+            .padding(.top, 5.0)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ContentView()
+            LoginScreen()
                 .preferredColorScheme(.dark)
                 .previewLayout(.device)
         }
