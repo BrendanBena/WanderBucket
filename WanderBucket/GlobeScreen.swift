@@ -14,7 +14,7 @@ struct Location {
     var longitude: Double
 }
 
-struct ContentView2: View {
+struct GlobeView: View {
     // add locations here
     @State var locations = [
         Location(title: "San Francisco", latitude: 37.7749, longitude: -122.4194),
@@ -23,12 +23,12 @@ struct ContentView2: View {
     
     var body: some View {
         //MapView(locations: locations)
-        MapView2(locations: locations)
+        Globe(locations: locations)
     }
 }
 
 
-struct MapView2: UIViewRepresentable {
+struct Globe: UIViewRepresentable {
     @State var locations: [Location]
     
     func makeUIView(context: Context) -> MKMapView {
@@ -56,14 +56,14 @@ struct MapView2: UIViewRepresentable {
     }
 }
 
-struct ContentView_Previews2: PreviewProvider {
+struct GlobeView_Previews: PreviewProvider {
     static var previews: some View {
         let locations = [
             Location(title: "San Francisco", latitude: 37.7749, longitude: -122.4194),
             Location(title: "New York", latitude: 40.7128, longitude: -74.0060)
         ]
         Group {
-            MapView2(locations: locations)
+            Globe(locations: locations)
         }
     }
 }
