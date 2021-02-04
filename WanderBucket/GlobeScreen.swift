@@ -19,7 +19,7 @@ struct GlobeView: View {
 struct Globe: UIViewRepresentable {
 
     func makeUIView(context: Context) -> MKMapView {
-        let mapView = MKMapView(frame: .zero)
+        let mapView = MKMapView(frame: .infinite)
         // change the map type here
         mapView.mapType = .hybridFlyover
         return mapView
@@ -29,6 +29,7 @@ struct Globe: UIViewRepresentable {
         let bucket = MKAnnotationView()
         bucket.image = UIImage(named: "WanderBucket-LogoBlackWhite")
         
+        
     }
 }
 
@@ -37,6 +38,7 @@ struct GlobeView_Previews: PreviewProvider {
         Group {
             Globe()
         }
+        .preferredColorScheme(.dark)
     }
 }
 
