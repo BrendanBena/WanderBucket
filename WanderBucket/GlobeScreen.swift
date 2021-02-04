@@ -10,8 +10,9 @@ import MapKit
 
 struct GlobeView: View {
     var body: some View {
-        //MapView(locations: locations)
-        Globe()
+        VStack {
+            Globe()
+        }.navigationBarHidden(true)
     }
 }
 
@@ -28,7 +29,6 @@ struct Globe: UIViewRepresentable {
     func updateUIView(_ view: MKMapView, context: Context) {
         let bucket = MKAnnotationView()
         bucket.image = UIImage(named: "WanderBucket-LogoBlackWhite")
-        
         
     }
 }

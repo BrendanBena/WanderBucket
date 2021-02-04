@@ -12,6 +12,10 @@ struct LoginScreen: View {
     @State private var username: String = ""
     @State private var password: String = ""
     
+    var disableLogin: Bool {
+        username.isEmpty || password.isEmpty
+    }
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -20,7 +24,10 @@ struct LoginScreen: View {
                 Qoute()
                 UsernameField(username: $username)
                 PasswordField(password: $password)
-                Button(action: {print("Button tapped")}) {
+//                Button(action: {print("Forgot Password Button tapped")}) {
+//                    LoginButton()
+//                }//.disabled(disableLogin)
+                NavigationLink(destination: GlobeView()) {
                     LoginButton()
                 }
                 NavigationLink(destination: SignUpScreen()) {
@@ -31,7 +38,8 @@ struct LoginScreen: View {
                 }
             }
         }
-        .padding(.bottom, 40.0)
+        //.animation(Animation.easeOut(duration: 1.0))
+        .padding(.bottom, 50.0)
     }
 }
 

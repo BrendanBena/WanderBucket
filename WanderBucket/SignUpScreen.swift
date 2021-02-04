@@ -32,7 +32,7 @@ struct SignUpScreen: View {
                 FirstSignUpButton()
             }
         }
-        .padding()
+        .padding(.bottom,50.0)
     }
 }
 
@@ -40,6 +40,7 @@ struct SignUpScreen: View {
 // Username Validation Function
 // Email Validation Function
 // DOB Validation Function
+
 struct SignUpTitle : View {
     var body : some View {
         VStack {
@@ -144,7 +145,6 @@ struct FirstSignUpButton : View {
     }
 }
 
-
 struct SignUpScreen_Previews: PreviewProvider {
     static var previews: some View {
         Group {
@@ -154,54 +154,3 @@ struct SignUpScreen_Previews: PreviewProvider {
         }
     }
 }
-
-
-
-
-
-//struct AppTitle : View {
-//    var body : some View {
-//        Text("WanderBucket")
-//            .font(.largeTitle)
-//            .fontWeight(.bold)
-//            .multilineTextAlignment(.center)
-//            .padding(/*@START_MENU_TOKEN@*/.all, 15.0/*@END_MENU_TOKEN@*/)
-//    }
-//}
-
-//struct AppLogo : View {
-//    var body : some View {
-//        Image("globe")
-//            .padding(-22.0)
-//            .clipShape(Circle())
-//            .overlay(Circle().stroke(Color.white, lineWidth: 4))
-//            .shadow(radius: 10)
-//    }
-//}
-//
-//
-//struct UsernameField: View {
-//
-//    @Binding var username: String
-//    var body : some View {
-//        TextField("Username", text: $username)
-//            .padding()
-//            .colorInvert()
-//            .background(Color.white)
-//            .cornerRadius(10.0)
-//            .padding(.horizontal, 40.0)
-//    }
-//}
-//
-//struct PasswordField: View {
-//
-//    @Binding var password: String
-//    var body: some View {
-//        SecureField("Password", text: $password)
-//            .padding()
-//            .colorInvert()
-//            .background(Color.white)
-//            .cornerRadius(10.0)
-//            .padding(.horizontal, 40.0)
-//    }
-//}
