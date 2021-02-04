@@ -24,9 +24,6 @@ struct LoginScreen: View {
                 Qoute()
                 UsernameField(username: $username)
                 PasswordField(password: $password)
-//                Button(action: {print("Forgot Password Button tapped")}) {
-//                    LoginButton()
-//                }//.disabled(disableLogin)
                 NavigationLink(destination: GlobeView()) {
                     LoginButton()
                 }
@@ -38,7 +35,6 @@ struct LoginScreen: View {
                 }
             }
         }
-        //.animation(Animation.easeOut(duration: 1.0))
         .padding(.bottom, 50.0)
     }
 }
