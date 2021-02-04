@@ -33,9 +33,9 @@ struct LoginScreen: View {
                 NavigationLink(destination: ForgotPasswordScreen()) {
                     ForgetPasswordButton()
                 }
-            }
+            }.padding(.bottom, 40.0)
         }
-        .padding(.bottom, 50.0)
+        Spacer()
     }
 }
 
@@ -45,7 +45,7 @@ struct AppTitle : View {
             .font(.largeTitle)
             .fontWeight(.bold)
             .multilineTextAlignment(.center)
-            .padding(.bottom, 35.0)
+            .padding(.bottom, 25.0)
     }
 }
 
