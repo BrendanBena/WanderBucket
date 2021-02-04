@@ -9,27 +9,33 @@ import SwiftUI
 
 struct LoginScreen: View {
     
-    @State var username: String = ""
-    @State var password: String = ""
+    @State private var username: String = ""
+    @State private var password: String = ""
+    
+    var disableLogin: Bool {
+        username.isEmpty || password.isEmpty
+    }
     
     var body: some View {
-        VStack {
-            AppTitle()
-            AppLogo()
-            Qoute()
-            UsernameField(username: $username)
-            PasswordField(password: $password)
-            Button(action: {print("Button tapped")}) {
-                LoginButton()
-            }
-            Button(action: {print("Forgot Password Button tapped")}) {
-                ForgotPasswordButton()
-            }
-            Button(action: {print("Sign Up Button tapped")}) {
-                SignUpButton()
-            }
+        NavigationView {
+            VStack {
+                AppTitle()
+                AppLogo()
+                Qoute()
+                UsernameField(username: $username)
+                PasswordField(password: $password)
+                NavigationLink(destination: GlobeView()) {
+                    LoginButton()
+                }.disabled(disableLogin)
+                NavigationLink(destination: SignUpScreen()) {
+                    SignUpButton()
+                }
+                NavigationLink(destination: ForgotPasswordScreen()) {
+                    ForgetPasswordButton()
+                }
+            }.padding(.bottom, 40.0)
         }
-        .padding()
+        Spacer()
     }
 }
 
@@ -39,7 +45,7 @@ struct AppTitle : View {
             .font(.largeTitle)
             .fontWeight(.bold)
             .multilineTextAlignment(.center)
-            .padding(/*@START_MENU_TOKEN@*/.all, 15.0/*@END_MENU_TOKEN@*/)
+            .padding(.bottom, 25.0)
     }
 }
 
@@ -60,7 +66,7 @@ struct Qoute : View {
             .fontWeight(.semibold)
             .foregroundColor(Color.white)
             .multilineTextAlignment(.center)
-            .padding(.vertical, 10.0)
+            .padding(.vertical, 20.0)
     }
 }
 
@@ -101,7 +107,7 @@ struct LoginButton : View {
     }
 }
 
-struct ForgotPasswordButton : View {
+struct SignUpButton : View {
     var body : some View {
         Text("Don't Have an Account? Sign Up.")
         .font(.footnote)
@@ -109,7 +115,7 @@ struct ForgotPasswordButton : View {
     }
 }
 
-struct SignUpButton : View {
+struct ForgetPasswordButton : View {
     var body : some View {
         Text("Forgot Password? Click Here.")
             .font(.footnote)
