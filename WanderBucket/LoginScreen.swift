@@ -26,11 +26,11 @@ struct LoginScreen: View {
                 PasswordField(password: $password)
                 NavigationLink(destination: GlobeView()) {
                     LoginButton()
-                }
+                }.disabled(disableLogin)
                 NavigationLink(destination: SignUpScreen()) {
                     SignUpButton()
                 }
-                Button(action: {print("Forgot Password Button tapped")}) {
+                NavigationLink(destination: ForgotPasswordScreen()) {
                     ForgetPasswordButton()
                 }
             }

@@ -8,15 +8,33 @@
 import SwiftUI
 
 struct ForgotPasswordScreen: View {
+    
     @State var forgottenEmail: String = ""
+    
     var body: some View {
-        ForgotEmailField(forgottenEmail: $forgottenEmail)
+        VStack{
+            ForgotEmailTitle()
+            ForgotEmailField(forgottenEmail: $forgottenEmail)
+            Button(action: {print("Forgot Email Button tapped")}) {
+                ForgotEmailButton()
+            }
+        }
+    }
+}
+
+struct ForgotEmailTitle : View {
+    var body : some View {
+        Text("Please Enter Email:")
+            .font(.title)
+            .fontWeight(.bold)
+            .multilineTextAlignment(.center)
+            .padding(.bottom, 7.5)
     }
 }
 
 struct ForgotEmailField: View {
 
-    @Binding var forgettenEmail: String
+    @Binding var forgottenEmail: String
     var body : some View {
         TextField("Email", text: $forgottenEmail)
             .padding()
@@ -28,8 +46,20 @@ struct ForgotEmailField: View {
     }
 }
 
+struct ForgotEmailButton : View {
+    var body : some View {
+        Text("Send Link")
+            .font(.headline)
+            .foregroundColor(.black)
+            .frame(width: 235, height: 45)
+            .background(Color.white)
+            .cornerRadius(15.0)
+    }
+}
+
 struct ForgotPasswordScreen_Previews: PreviewProvider {
     static var previews: some View {
         ForgotPasswordScreen()
+            .preferredColorScheme(.dark)
     }
 }
