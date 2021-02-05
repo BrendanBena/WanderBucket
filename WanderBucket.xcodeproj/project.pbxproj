@@ -19,7 +19,6 @@
 		6BDB8C4725CA027100174CF2 /* OnBoardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDB8C4625CA027100174CF2 /* OnBoardingScreen.swift */; };
 		6BEAA8B525CCB2D000A96BF1 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BEAA89D25CCB23A00A96BF1 /* SQLite.framework */; };
 		6BEAA8B625CCB2D000A96BF1 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6BEAA89D25CCB23A00A96BF1 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6BEAA8CE25CCC38900A96BF1 /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEAA8CD25CCC38900A96BF1 /* LoadingScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,7 +119,6 @@
 		6BDB8C3925C9D82600174CF2 /* GlobeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobeScreen.swift; sourceTree = "<group>"; };
 		6BDB8C4625CA027100174CF2 /* OnBoardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingScreen.swift; sourceTree = "<group>"; };
 		6BEAA89225CCB23A00A96BF1 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "../SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
-		6BEAA8CD25CCC38900A96BF1 /* LoadingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,14 +147,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B27CAB025CE00E6006D1B93 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6BDB8C4625CA027100174CF2 /* OnBoardingScreen.swift */,
+				6B8AA1C325C9C39A00E3B782 /* LoginScreen.swift */,
+				6BAC47F325CB571400C5F7AE /* SignUpScreen.swift */,
+				6BDB8C3925C9D82600174CF2 /* GlobeScreen.swift */,
+				6BAC47FB25CB93A600C5F7AE /* ForgotPasswordScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6B27CAB225CE00F7006D1B93 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6B27CAB325CE0116006D1B93 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		6B8AA1B525C9C39A00E3B782 = {
 			isa = PBXGroup;
 			children = (
+				6BEAA89225CCB23A00A96BF1 /* SQLite.xcodeproj */,
 				6B8AA1C025C9C39A00E3B782 /* WanderBucket */,
+				6B8AA1C525C9C39D00E3B782 /* Assets.xcassets */,
+				6B8AA1C125C9C39A00E3B782 /* WanderBucketApp.swift */,
 				6B8AA1D225C9C39D00E3B782 /* WanderBucketTests */,
 				6B8AA1DD25C9C39D00E3B782 /* WanderBucketUITests */,
 				6B8AA1BF25C9C39A00E3B782 /* Products */,
-				6BEAA89225CCB23A00A96BF1 /* SQLite.xcodeproj */,
 				6BEAA8B425CCB2D000A96BF1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -174,16 +200,11 @@
 		6B8AA1C025C9C39A00E3B782 /* WanderBucket */ = {
 			isa = PBXGroup;
 			children = (
-				6B8AA1C125C9C39A00E3B782 /* WanderBucketApp.swift */,
-				6B8AA1C325C9C39A00E3B782 /* LoginScreen.swift */,
-				6BAC47F325CB571400C5F7AE /* SignUpScreen.swift */,
-				6BDB8C3925C9D82600174CF2 /* GlobeScreen.swift */,
-				6BAC47FB25CB93A600C5F7AE /* ForgotPasswordScreen.swift */,
-				6B8AA1C525C9C39D00E3B782 /* Assets.xcassets */,
 				6B8AA1CA25C9C39D00E3B782 /* Info.plist */,
+				6B27CAB025CE00E6006D1B93 /* Views */,
+				6B27CAB325CE0116006D1B93 /* Resources */,
+				6B27CAB225CE00F7006D1B93 /* Model */,
 				6B8AA1C725C9C39D00E3B782 /* Preview Content */,
-				6BEAA8CD25CCC38900A96BF1 /* LoadingScreen.swift */,
-				6BDB8C4625CA027100174CF2 /* OnBoardingScreen.swift */,
 			);
 			path = WanderBucket;
 			sourceTree = "<group>";
@@ -424,7 +445,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BAC47F425CB571400C5F7AE /* SignUpScreen.swift in Sources */,
-				6BEAA8CE25CCC38900A96BF1 /* LoadingScreen.swift in Sources */,
 				6BAC47FC25CB93A600C5F7AE /* ForgotPasswordScreen.swift in Sources */,
 				6BDB8C3A25C9D82600174CF2 /* GlobeScreen.swift in Sources */,
 				6B8AA1C425C9C39A00E3B782 /* LoginScreen.swift in Sources */,
