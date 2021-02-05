@@ -20,7 +20,7 @@ struct GlobeView: View {
 struct Globe: UIViewRepresentable {
 
     func makeUIView(context: Context) -> MKMapView {
-        let mapView = MKMapView(frame: .infinite)
+        let mapView = MKMapView(frame: .zero)
         // change the map type here
         mapView.mapType = .hybridFlyover
         return mapView

@@ -1,45 +1,49 @@
 {
   "images" : [
     {
-      "filename" : "WanderBucket-LogoBlackWhite4040.png",
+      "filename" : "WB-BW-4040.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "20x20"
     },
     {
+      "filename" : "WB-BW-6060.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "20x20"
     },
     {
-      "filename" : "WanderBucket-LogoBlackWhite.png",
+      "filename" : "WB-BW-5858.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
+      "filename" : "WB-BW-8787.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "29x29"
     },
     {
-      "filename" : "WanderBucket-LogoBlackWhite8080.png",
+      "filename" : "WB-BW-8080.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "40x40"
     },
     {
+      "filename" : "WB-BW-Sma-1.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "40x40"
     },
     {
-      "filename" : "WanderBucket-LogoBlackWhite8080 2.png",
+      "filename" : "WB-BW-Sma.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
     },
     {
+      "filename" : "WB-BW-Med.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "60x60"
@@ -90,6 +94,7 @@
       "size" : "83.5x83.5"
     },
     {
+      "filename" : "WB-BW-Lar.png",
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"
