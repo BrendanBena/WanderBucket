@@ -6,6 +6,7 @@
 //
 //
 //  This might be problematic if people enter null emails
+//  Add Password Validation function
 //
 //
 
@@ -44,9 +45,6 @@ struct SignUpScreen: View {
         .padding(.bottom,50.0)
     }
 }
-
-// Password Validation Function
-// Username Validation Function
 
 struct SignUpTitle : View {
     var body : some View {
@@ -200,7 +198,6 @@ struct DOBField: View {
                     self.isDOBValid = true
                 } else {
                     self.isDOBValid = false
-                    //self.dob = ""
                 }
             }
         })
@@ -229,21 +226,6 @@ struct DOBField: View {
     }
 }
 
-//// Think about country selection instead
-//struct NationalityField: View {
-//
-//    @Binding var nationality: String
-//    var body : some View {
-//        TextField("Nationality (Optional)", text: $nationality)
-//            .padding()
-//            .colorInvert()
-//            .background(Color.white)
-//            .cornerRadius(10.0)
-//            .padding(.horizontal, 40.0)
-//            .padding(.vertical, 5.0)
-//    }
-//}
-
 
 // Think about country selection instead
 struct NationalityField: View {
@@ -266,14 +248,7 @@ struct NationalityField: View {
         .frame(width: 350.0, height: 45.0)
         .cornerRadius(10.0)
         .padding(.horizontal, 40.0)
-        
-//        TextField("Nationality (Optional)", text: $nationality)
-//            .padding()
-//            .colorInvert()
-//            .background(Color.white)
-//            .cornerRadius(10.0)
-//            .padding(.horizontal, 40.0)
-//            .padding(.vertical, 5.0)
+
     }
 }
 
@@ -294,6 +269,7 @@ struct GenderField: View {
     }
 }
 
+
 struct FirstSignUpButton : View {
     
     @Environment(\.colorScheme) var colorScheme
@@ -308,7 +284,9 @@ struct FirstSignUpButton : View {
     }
 }
 
+
 struct SignUpScreen_Previews: PreviewProvider {
+    
     static var previews: some View {
         Group {
             SignUpScreen()

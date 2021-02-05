@@ -24,11 +24,13 @@ struct GlobeView: View {
         Location(title: "New York", latitude: 40.7128, longitude: -74.0060)
     ]
     
+    
     var body: some View {
-        //VStack {
-        //Globe()
-        //}//.navigationBarHidden(true)
-        Globe(locations: locations)
+            VStack{
+                Globe(locations: locations)
+            }.navigationBarHidden(true)
+            .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            .background(Color.black)
     }
 }
 
@@ -53,14 +55,13 @@ struct Globe: UIViewRepresentable {
     func updateUIView(_ view: MKMapView, context: Context) {
         for location in locations {
             // make a pins
-            //let pin = MKPointAnnotation()
+            let pin = MKPointAnnotation()
             // set the coordinates
-            //pin.coordinate = CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude)
+            pin.coordinate = CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude)
             // set the title
-            //pin.title = location.title
+            pin.title = location.title
             // add to map
-            //view.addAnnotation(pin)
-            let mark = MKMarkerAnnotation
+            view.addAnnotation(pin)
             
         }
     }
@@ -78,8 +79,9 @@ struct GlobeView_Previews: PreviewProvider {
         
         Group {
             Globe(locations: locations)
-        }
-        .preferredColorScheme(.dark)
+        }.background(Color.black)
+        .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+        //.preferredColorScheme(.dark)
     }
 }
 

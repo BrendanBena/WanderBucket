@@ -61,7 +61,7 @@ struct AppLogo : View {
 
 struct AppLogo2 : View {
     var body : some View {
-        Image("Globe2")
+        Image("Globe")
             .resizable()
             .scaledToFit()
             .frame(width: 300.0,height:300)
