@@ -9,6 +9,7 @@ import SwiftUI
 import MapKit
 
 struct GlobeView: View {
+    @Environment(\.colorScheme) var colorScheme
     var body: some View {
         VStack {
             Globe()
