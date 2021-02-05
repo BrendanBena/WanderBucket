@@ -20,7 +20,7 @@ struct LoginScreen: View {
         NavigationView {
             VStack {
                 AppTitle()
-                AppLogo()
+                AppLogo2()
                 Qoute()
                 UsernameField(username: $username)
                 PasswordField(password: $password)
@@ -59,12 +59,28 @@ struct AppLogo : View {
     }
 }
 
+struct AppLogo2 : View {
+    var body : some View {
+        Image("Globe")
+            .resizable()
+            .scaledToFit()
+            .frame(width: 300.0,height:300)
+            //.padding(-22.0)
+            //.clipShape(Circle())
+            .overlay(Circle().stroke(Color.white, lineWidth: 1))
+            .shadow(radius: 10)
+    }
+}
+
 struct Qoute : View {
+    
+    @Environment(\.colorScheme) var colorScheme
+    
     var body : some View {
         Text("Not All Those Who Wander Are Lost...")
             .font(.footnote)
             .fontWeight(.semibold)
-            .foregroundColor(Color.white)
+            .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
             .multilineTextAlignment(.center)
             .padding(.vertical, 20.0)
     }
@@ -72,12 +88,14 @@ struct Qoute : View {
 
 struct UsernameField: View {
     
+    @Environment(\.colorScheme) var colorScheme
     @Binding var username: String
+    
     var body : some View {
         TextField("Username", text: $username)
             .padding()
             .colorInvert()
-            .background(Color.white)
+            .background(colorScheme == .dark ? Color.white : Color.black)
             .cornerRadius(10.0)
             .padding(.horizontal, 40.0)
     }
@@ -85,24 +103,29 @@ struct UsernameField: View {
 
 struct PasswordField: View {
     
+    @Environment(\.colorScheme) var colorScheme
     @Binding var password: String
+    
     var body: some View {
         SecureField("Password", text: $password)
             .padding()
             .colorInvert()
-            .background(Color.white)
+            .background(colorScheme == .dark ? Color.white : Color.black)
             .cornerRadius(10.0)
             .padding(.horizontal, 40.0)
     }
 }
 
 struct LoginButton : View {
+    
+    @Environment(\.colorScheme) var colorScheme
+    
     var body : some View {
         Text("LOGIN")
             .font(.headline)
-            .foregroundColor(.black)
+            .foregroundColor(colorScheme == .dark ? Color.black : Color.white)
             .frame(width: 235, height: 45)
-            .background(Color.white)
+            .background(colorScheme == .dark ? Color.white : Color.black)
             .cornerRadius(15.0)
     }
 }
@@ -127,7 +150,7 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             LoginScreen()
-                .preferredColorScheme(.dark)
+                //.preferredColorScheme(.dark)
                 .previewLayout(.device)
         }
     }

@@ -6,6 +6,7 @@
 //
 //
 //  This might be problematic if people enter null emails
+//  Add Password Validation function
 //
 //
 
@@ -45,9 +46,6 @@ struct SignUpScreen: View {
     }
 }
 
-// Password Validation Function
-// Username Validation Function
-
 struct SignUpTitle : View {
     var body : some View {
         VStack {
@@ -67,6 +65,7 @@ struct SignUpTitle : View {
 
 struct UserNameField: View {
     
+    @Environment(\.colorScheme) var colorScheme
     @Binding var username: String
     @Binding var isUsernameValid: Bool
     var body : some View {
@@ -81,7 +80,7 @@ struct UserNameField: View {
         })
         .padding()
         .colorInvert()
-        .background(Color.white)
+        .background(colorScheme == .dark ? Color.white : Color.black)
         .cornerRadius(10.0)
         .padding(.horizontal, 40.0)
         if !self.isUsernameValid {
@@ -107,6 +106,7 @@ struct UserNameField: View {
 
 struct EmailField: View {
 
+    @Environment(\.colorScheme) var colorScheme
     @Binding var email: String
     @Binding var isEmailValid: Bool
     var body : some View {
@@ -121,7 +121,7 @@ struct EmailField: View {
         })
         .padding()
         .colorInvert()
-        .background(Color.white)
+        .background(colorScheme == .dark ? Color.white : Color.black)
         .cornerRadius(10.0)
         .padding(.horizontal, 40.0)
         .padding(.vertical, 5.0)
@@ -147,6 +147,7 @@ struct EmailField: View {
 
 struct ComfirmPasswordField: View {
 
+    @Environment(\.colorScheme) var colorScheme
     @Binding var confirmedPassword: String
     //@Binding var isPasswordValid: Bool
     var body : some View {
@@ -164,7 +165,7 @@ struct ComfirmPasswordField: View {
 //        })
         .padding()
         .colorInvert()
-        .background(Color.white)
+        .background(colorScheme == .dark ? Color.white : Color.black)
         .cornerRadius(10.0)
         .padding(.horizontal, 40.0)
         .padding(.vertical, 5.0)
@@ -187,6 +188,7 @@ struct ComfirmPasswordField: View {
 // Think about calendar here
 struct DOBField: View {
     
+    @Environment(\.colorScheme) var colorScheme
     @Binding var dob: String
     @Binding var isDOBValid: Bool
     var body : some View {
@@ -196,13 +198,12 @@ struct DOBField: View {
                     self.isDOBValid = true
                 } else {
                     self.isDOBValid = false
-                    //self.dob = ""
                 }
             }
         })
         .padding()
         .colorInvert()
-        .background(Color.white)
+        .background(colorScheme == .dark ? Color.white : Color.black)
         .cornerRadius(10.0)
         .datePickerStyle(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=Date Picker Style@*/DefaultDatePickerStyle()/*@END_MENU_TOKEN@*/)
         .padding(.horizontal, 40.0)
@@ -225,27 +226,13 @@ struct DOBField: View {
     }
 }
 
-//// Think about country selection instead
-//struct NationalityField: View {
-//
-//    @Binding var nationality: String
-//    var body : some View {
-//        TextField("Nationality (Optional)", text: $nationality)
-//            .padding()
-//            .colorInvert()
-//            .background(Color.white)
-//            .cornerRadius(10.0)
-//            .padding(.horizontal, 40.0)
-//            .padding(.vertical, 5.0)
-//    }
-//}
-
 
 // Think about country selection instead
 struct NationalityField: View {
-
+    
+    @Environment(\.colorScheme) var colorScheme
     @Binding var nationality: String
-    var countries = ["(Nationality)", "US", "Canada", "Mexico", "Germany", "Great Britain", "France"]
+    var countries = ["(Nationality)", "United States", "Canada", "Mexico", "Germany", "Great Britain", "France"]
     @State private var countryIndex = 0
     
     var body : some View {
@@ -257,52 +244,53 @@ struct NationalityField: View {
             }
         }
         .colorInvert()
-        .background(Color.white)
+        .background(colorScheme == .dark ? Color.white : Color.black)
         .frame(width: 350.0, height: 45.0)
         .cornerRadius(10.0)
         .padding(.horizontal, 40.0)
-        
-//        TextField("Nationality (Optional)", text: $nationality)
-//            .padding()
-//            .colorInvert()
-//            .background(Color.white)
-//            .cornerRadius(10.0)
-//            .padding(.horizontal, 40.0)
-//            .padding(.vertical, 5.0)
+
     }
 }
 
 // Maybe take out?
 struct GenderField: View {
-
+    
+    @Environment(\.colorScheme) var colorScheme
     @Binding var gender: String
     var body : some View {
         TextField("Gender (Optional)", text: $gender)
             .padding()
             .colorInvert()
-            .background(Color.white)
+            //.foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+            .background(colorScheme == .dark ? Color.white : Color.black)
             .cornerRadius(10.0)
             .padding(.horizontal, 40.0)
             .padding(.vertical, 5.0)
     }
 }
 
+
 struct FirstSignUpButton : View {
+    
+    @Environment(\.colorScheme) var colorScheme
     var body : some View {
         Text("Sign Up!")
             .font(.headline)
-            .foregroundColor(.black)
+            .foregroundColor(colorScheme == .dark ? Color.black : Color.white)
             .frame(width: 235, height: 45)
-            .background(Color.white)
+            //.background(Color.white)
+            .background(colorScheme == .dark ? Color.white : Color.black)
             .cornerRadius(15.0)
     }
 }
 
+
 struct SignUpScreen_Previews: PreviewProvider {
+    
     static var previews: some View {
         Group {
             SignUpScreen()
-                .preferredColorScheme(.dark)
+                //.preferredColorScheme(.dark)
                 .previewLayout(.device)
         }
     }
