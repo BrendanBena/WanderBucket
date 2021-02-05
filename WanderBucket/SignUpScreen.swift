@@ -250,7 +250,7 @@ struct NationalityField: View {
     
     @Environment(\.colorScheme) var colorScheme
     @Binding var nationality: String
-    var countries = ["(Nationality)", "US", "Canada", "Mexico", "Germany", "Great Britain", "France"]
+    var countries = ["(Nationality)", "United States", "Canada", "Mexico", "Germany", "Great Britain", "France"]
     @State private var countryIndex = 0
     
     var body : some View {

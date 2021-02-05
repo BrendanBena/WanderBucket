@@ -179,11 +179,11 @@
 				6BAC47F325CB571400C5F7AE /* SignUpScreen.swift */,
 				6BDB8C3925C9D82600174CF2 /* GlobeScreen.swift */,
 				6BAC47FB25CB93A600C5F7AE /* ForgotPasswordScreen.swift */,
-				6BDB8C4625CA027100174CF2 /* OnBoardingScreen.swift */,
 				6B8AA1C525C9C39D00E3B782 /* Assets.xcassets */,
 				6B8AA1CA25C9C39D00E3B782 /* Info.plist */,
 				6B8AA1C725C9C39D00E3B782 /* Preview Content */,
 				6BEAA8CD25CCC38900A96BF1 /* LoadingScreen.swift */,
+				6BDB8C4625CA027100174CF2 /* OnBoardingScreen.swift */,
 			);
 			path = WanderBucket;
 			sourceTree = "<group>";
