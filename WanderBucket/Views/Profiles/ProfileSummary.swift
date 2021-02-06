@@ -22,6 +22,7 @@ struct ProfileSummary: View {
                 Text("From: \(profile.nationality)")
                 Text("Age:  \(profile.age)")
             }
+            .padding()
         }
     }
 }
@@ -29,5 +30,6 @@ struct ProfileSummary: View {
 struct ProfileSummary_Previews: PreviewProvider {
     static var previews: some View {
         ProfileSummary(profile: Profile.default)
+            .environmentObject(ModelData())
     }
 }

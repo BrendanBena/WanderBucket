@@ -14,9 +14,6 @@ final class ModelData: ObservableObject {
     @Published var profile = Profile.default
 }
 
-
-var bucketList: [BucketList] = load("BucketList.json")
-
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
 

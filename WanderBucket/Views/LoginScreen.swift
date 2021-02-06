@@ -150,8 +150,10 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             LoginScreen()
+                //.environmentObject(ModelData())
                 //.preferredColorScheme(.dark)
                 .previewLayout(.device)
+            
         }
     }
 }
