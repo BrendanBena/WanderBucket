@@ -19,7 +19,7 @@ struct GlobeView: View {
     
     //@Environment(\.colorScheme) var colorScheme
     //@EnvironmentObject var modelData: ModelData
-    @State private var showingProfile = false
+    //@State private var showingProfile = false
     
     @State var locations = [
         Location(title: "San Francisco", latitude: 37.7749, longitude: -122.4194),

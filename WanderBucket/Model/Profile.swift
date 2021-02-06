@@ -5,6 +5,7 @@
 //  Created by Brendan Bena on 2/5/21.
 //
 
+import SwiftUI
 import Foundation
 
 struct Profile {
@@ -24,7 +25,11 @@ struct Profile {
     var age: Int
     var nationality: String
     var gender: String
-    var profilePicture: String
+    
+    private var profilePicture: String
+    var picture : Image {
+        Image(profilePicture)
+    }
 }
     
     

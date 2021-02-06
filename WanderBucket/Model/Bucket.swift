@@ -10,7 +10,7 @@ import Foundation
 import SwiftUI
 import CoreLocation
 
-struct BucketList: Hashable, Codable, Identifiable {
+struct Bucket: Hashable, Codable, Identifiable {
     
     var id : Int
     var userId: Int

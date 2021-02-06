@@ -9,17 +9,20 @@ import Foundation
 import Combine
 
 
-final class ModelData: ObservableObject {
-    @Published var bucketList: [BucketList] = load("BucketList.json")
-    @Published var profile = Profile.default
-}
+//final class ModelData: ObservableObject {
+//    @Published var buckets: [Bucket] = load("BucketList.json")
+//    @Published var profile = Profile.default
+//}
+
+var buckets: [Bucket] = load("bucketData.json")
+//var buckets: [Bucket] = load("BucketList.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
 
     guard let file = Bundle.main.url(forResource: filename, withExtension: nil)
-        else {
-            fatalError("Couldn't find \(filename) in main bundle.")
+    else {
+        fatalError("Couldn't find \(filename) in main bundle.")
     }
 
     do {

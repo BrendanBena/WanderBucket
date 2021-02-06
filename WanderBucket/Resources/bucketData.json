@@ -1,8 +1,8 @@
 [
     {
+        "bucketId" : 100,
+        "userId": 2,
         "name": "San Diego Bucket",
-        "id" : 100,
-        "userId": 1,
         "country": "United States",
         "state": "California",
         "city": "San Diego",
@@ -14,18 +14,17 @@
         }
     },
     {
+        "bucketId" : 101
+        "userId": 2
         "name": "New York Bucket",
-        "id" : 101,
-        "userId": 2,
-        "country": "United States",
+        "country": "United State",
         "state": "New York",
         "city": "New York",
-        "description": "New York sample Bucket",
-        "imageName": "bucketNewYork",
+        "description": "San Diego sample Bucket",
+        "imageName": "bucketSanDiego",
         "coordinates": {
             "longitude": -75.000000,
             "latitude": 43.000000
         }
     }
 ]
-
