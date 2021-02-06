@@ -1,14 +1,14 @@
-/*
-See LICENSE folder for this sample’s licensing information.
-
-Abstract:
-A representation of user profile data.
-*/
+//
+//  Profile.swift
+//  WanderBucket
+//
+//  Created by Brendan Bena on 2/5/21.
+//
 
 import Foundation
 
 struct Profile {
-    
+
     static let `default` = Profile(id: 1,
                                    username : "BrendanBena",
                                    name: "Brendan Bena",

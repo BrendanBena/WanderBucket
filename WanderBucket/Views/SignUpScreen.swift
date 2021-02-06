@@ -290,7 +290,7 @@ struct SignUpScreen_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             SignUpScreen()
-                //.preferredColorScheme(.dark)
+                .preferredColorScheme(.dark)
                 .previewLayout(.device)
         }
     }

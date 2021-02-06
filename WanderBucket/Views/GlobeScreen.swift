@@ -32,31 +32,6 @@ struct GlobeView: View {
             .navigationBarHidden(true)
     }
 }
-//        .navigationTitle("Your World")
-//        .toolbar {
-//            Button(action: { showingProfile.toggle() }) {
-//                Image(systemName: "person.crop.circle")
-//                .accessibilityLabel("User Profile")
-//
-//            }
-//        }
-//        .sheet(isPresented: $showingProfile) {
-//            ProfileHost()
-//                .environmentObject(modelData)
-        //        Globe(locations: locations)
-        //            //.navigationBarHidden(true)
-        //            .navigationTitle("Featured")
-        //            .toolbar {
-        //                Button(action: { showingProfile.toggle() }) {
-        //                    Image(systemName: "person.crop.circle")
-        //                        .accessibilityLabel("User Profile")
-        //                }
-        //            }
-        //            .sheet(isPresented: $showingProfile) {
-        //                ProfileHost()
-        //                    .environmentObject(modelData)
-        //            }
-                    //.edgesIgnoringSafeArea(.all
 
 
 struct Globe: UIViewRepresentable {

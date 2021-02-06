@@ -151,7 +151,7 @@ struct ContentView_Previews: PreviewProvider {
         Group {
             LoginScreen()
                 //.environmentObject(ModelData())
-                //.preferredColorScheme(.dark)
+                .preferredColorScheme(.dark)
                 .previewLayout(.device)
             
         }
