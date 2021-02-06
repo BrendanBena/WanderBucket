@@ -18,6 +18,8 @@ struct Location {
 struct GlobeView: View {
     
     @Environment(\.colorScheme) var colorScheme
+    @EnvironmentObject var modelData: ModelData
+    @State private var showingProfile = false
     
     @State var locations = [
         Location(title: "San Francisco", latitude: 37.7749, longitude: -122.4194),
@@ -26,10 +28,23 @@ struct GlobeView: View {
     
     
     var body: some View {
-            VStack{
-                Globe(locations: locations)
-            }.navigationBarHidden(true)
-            .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            Globe(locations: locations)
+        }
+//        Globe(locations: locations)
+//            //.navigationBarHidden(true)
+//            .navigationTitle("Featured")
+//            .toolbar {
+//                Button(action: { showingProfile.toggle() }) {
+//                    Image(systemName: "person.crop.circle")
+//                        .accessibilityLabel("User Profile")
+//                }
+//            }
+//            .sheet(isPresented: $showingProfile) {
+//                ProfileHost()
+//                    .environmentObject(modelData)
+//            }
+            .edgesIgnoringSafeArea(.all)
             .background(Color.black)
     }
 }
@@ -77,10 +92,10 @@ struct GlobeView_Previews: PreviewProvider {
             Location(title: "New York", latitude: 40.7128, longitude: -74.0060)
         ]
         
-        Group {
-            Globe(locations: locations)
-        }.background(Color.black)
-        .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+        Globe(locations: locations)
+           // .environmentObject(ModelData())
+        //.background(Color.black)
+        //.edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
         //.preferredColorScheme(.dark)
     }
 }
