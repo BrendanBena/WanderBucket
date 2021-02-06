@@ -19,8 +19,6 @@
 		6B8AA1C425C9C39A00E3B782 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8AA1C325C9C39A00E3B782 /* LoginScreen.swift */; };
 		6B8AA1C625C9C39D00E3B782 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B8AA1C525C9C39D00E3B782 /* Assets.xcassets */; };
 		6B8AA1C925C9C39D00E3B782 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B8AA1C825C9C39D00E3B782 /* Preview Assets.xcassets */; };
-		6B8AA1D425C9C39D00E3B782 /* WanderBucketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8AA1D325C9C39D00E3B782 /* WanderBucketTests.swift */; };
-		6B8AA1DF25C9C39D00E3B782 /* WanderBucketUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8AA1DE25C9C39D00E3B782 /* WanderBucketUITests.swift */; };
 		6BAC47F425CB571400C5F7AE /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAC47F325CB571400C5F7AE /* SignUpScreen.swift */; };
 		6BAC47FC25CB93A600C5F7AE /* ForgotPasswordScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAC47FB25CB93A600C5F7AE /* ForgotPasswordScreen.swift */; };
 		6BBF754F25CF182B008D8DE7 /* bucketData.json in Resources */ = {isa = PBXBuildFile; fileRef = 6BBF754E25CF182B008D8DE7 /* bucketData.json */; };
@@ -128,11 +126,7 @@
 		6B8AA1C825C9C39D00E3B782 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6B8AA1CA25C9C39D00E3B782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B8AA1CF25C9C39D00E3B782 /* WanderBucketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WanderBucketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B8AA1D325C9C39D00E3B782 /* WanderBucketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WanderBucketTests.swift; sourceTree = "<group>"; };
-		6B8AA1D525C9C39D00E3B782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B8AA1DA25C9C39D00E3B782 /* WanderBucketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WanderBucketUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B8AA1DE25C9C39D00E3B782 /* WanderBucketUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WanderBucketUITests.swift; sourceTree = "<group>"; };
-		6B8AA1E025C9C39D00E3B782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BAC47F325CB571400C5F7AE /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		6BAC47FB25CB93A600C5F7AE /* ForgotPasswordScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordScreen.swift; sourceTree = "<group>"; };
 		6BBF754E25CF182B008D8DE7 /* bucketData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bucketData.json; sourceTree = "<group>"; };
@@ -215,15 +209,19 @@
 			path = Profiles;
 			sourceTree = "<group>";
 		};
+		6B452DE125CF1FEE004C0C54 /* Assets.xcassets */ = {
+			isa = PBXGroup;
+			children = (
+				6B8AA1C525C9C39D00E3B782 /* Assets.xcassets */,
+			);
+			path = Assets.xcassets;
+			sourceTree = "<group>";
+		};
 		6B8AA1B525C9C39A00E3B782 = {
 			isa = PBXGroup;
 			children = (
 				6BEAA89225CCB23A00A96BF1 /* SQLite.xcodeproj */,
 				6B8AA1C025C9C39A00E3B782 /* WanderBucket */,
-				6B8AA1C525C9C39D00E3B782 /* Assets.xcassets */,
-				6B8AA1C125C9C39A00E3B782 /* WanderBucketApp.swift */,
-				6B8AA1D225C9C39D00E3B782 /* WanderBucketTests */,
-				6B8AA1DD25C9C39D00E3B782 /* WanderBucketUITests */,
 				6B8AA1BF25C9C39A00E3B782 /* Products */,
 				6BEAA8B425CCB2D000A96BF1 /* Frameworks */,
 			);
@@ -242,7 +240,9 @@
 		6B8AA1C025C9C39A00E3B782 /* WanderBucket */ = {
 			isa = PBXGroup;
 			children = (
+				6B8AA1C125C9C39A00E3B782 /* WanderBucketApp.swift */,
 				6B8AA1CA25C9C39D00E3B782 /* Info.plist */,
+				6B452DE125CF1FEE004C0C54 /* Assets.xcassets */,
 				6B27CAB025CE00E6006D1B93 /* Views */,
 				6B27CAB225CE00F7006D1B93 /* Model */,
 				6B27CAB325CE0116006D1B93 /* Resources */,
@@ -257,24 +257,6 @@
 				6B8AA1C825C9C39D00E3B782 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		6B8AA1D225C9C39D00E3B782 /* WanderBucketTests */ = {
-			isa = PBXGroup;
-			children = (
-				6B8AA1D325C9C39D00E3B782 /* WanderBucketTests.swift */,
-				6B8AA1D525C9C39D00E3B782 /* Info.plist */,
-			);
-			path = WanderBucketTests;
-			sourceTree = "<group>";
-		};
-		6B8AA1DD25C9C39D00E3B782 /* WanderBucketUITests */ = {
-			isa = PBXGroup;
-			children = (
-				6B8AA1DE25C9C39D00E3B782 /* WanderBucketUITests.swift */,
-				6B8AA1E025C9C39D00E3B782 /* Info.plist */,
-			);
-			path = WanderBucketUITests;
 			sourceTree = "<group>";
 		};
 		6BEAA89325CCB23A00A96BF1 /* Products */ = {
@@ -517,7 +499,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B8AA1D425C9C39D00E3B782 /* WanderBucketTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,7 +506,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B8AA1DF25C9C39D00E3B782 /* WanderBucketUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
