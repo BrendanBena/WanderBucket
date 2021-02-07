@@ -20,7 +20,6 @@
 		6B452E0D25CF50D5004C0C54 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B452E0C25CF50D5004C0C54 /* CategoryRow.swift */; };
 		6B452E1125CF5603004C0C54 /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B452E1025CF5603004C0C54 /* CategoryItem.swift */; };
 		6B452E1525CF657F004C0C54 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B452E1425CF657F004C0C54 /* ContentView.swift */; };
-		6B452E2125CF9B1A004C0C54 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B452E2025CF9B1A004C0C54 /* PageViewController.swift */; };
 		6B56312F25CE2BFE009F34D8 /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B56312E25CE2BFE009F34D8 /* ProfileEditor.swift */; };
 		6B8AA1C225C9C39A00E3B782 /* WanderBucketApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8AA1C125C9C39A00E3B782 /* WanderBucketApp.swift */; };
 		6B8AA1C425C9C39A00E3B782 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8AA1C325C9C39A00E3B782 /* LoginScreen.swift */; };
@@ -131,7 +130,6 @@
 		6B452E0C25CF50D5004C0C54 /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 		6B452E1025CF5603004C0C54 /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
 		6B452E1425CF657F004C0C54 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		6B452E2025CF9B1A004C0C54 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		6B56312E25CE2BFE009F34D8 /* ProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
 		6B8AA1BE25C9C39A00E3B782 /* WanderBucket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WanderBucket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B8AA1C125C9C39A00E3B782 /* WanderBucketApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WanderBucketApp.swift; sourceTree = "<group>"; };
@@ -186,7 +184,6 @@
 				6BDB8C3925C9D82600174CF2 /* GlobeScreen.swift */,
 				6BAC47FB25CB93A600C5F7AE /* ForgotPasswordScreen.swift */,
 				6B452E1425CF657F004C0C54 /* ContentView.swift */,
-				6B452E2025CF9B1A004C0C54 /* PageViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -527,7 +524,6 @@
 				6B27CAD625CE1D87006D1B93 /* Bucket.swift in Sources */,
 				6B452E0925CF4F9C004C0C54 /* CategoryHome.swift in Sources */,
 				6B27CAC225CE0BF9006D1B93 /* Profile.swift in Sources */,
-				6B452E2125CF9B1A004C0C54 /* PageViewController.swift in Sources */,
 				6B27CABA25CE0AFD006D1B93 /* ModelData.swift in Sources */,
 				6B27CAE925CE20F4006D1B93 /* ProfileSummary.swift in Sources */,
 				6B452DFF25CF4760004C0C54 /* FavoriteButton.swift in Sources */,

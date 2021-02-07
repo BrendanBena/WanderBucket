@@ -26,7 +26,7 @@ struct ContentView: View {
                 .tag(Tab.featured)
             GlobeView()
                 .tabItem {
-                    Label("World", systemImage: "home")
+                    Label("World", systemImage: "cloud")
                 }
                 .tag(Tab.map)
             BucketList()
