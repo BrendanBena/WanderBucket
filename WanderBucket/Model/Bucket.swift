@@ -16,9 +16,19 @@ struct Bucket: Hashable, Codable, Identifiable {
     var userId: Int
     var name: String
     var country: String
-    var state: String
+    //var state: String
     var city: String
+    var isFavorite: Bool
+    var isFeatured: Bool
     var description: String
+    
+    
+    var state: Category
+    enum Category: String, CaseIterable, Codable {
+        case California  = "California"
+        case NewYork = "New York"
+        case Colorado = "Colorado"
+    }
     
     private var imageName: String
     var image: Image {

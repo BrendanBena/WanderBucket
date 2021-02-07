@@ -146,14 +146,11 @@ struct ForgetPasswordButton : View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct LoginScreen_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
             LoginScreen()
-                //.environmentObject(ModelData())
+                .environmentObject(ModelData())
                 .preferredColorScheme(.dark)
                 .previewLayout(.device)
-            
-        }
     }
 }

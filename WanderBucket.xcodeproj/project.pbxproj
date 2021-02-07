@@ -10,10 +10,16 @@
 		6B27CABA25CE0AFD006D1B93 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B27CAB925CE0AFD006D1B93 /* ModelData.swift */; };
 		6B27CAC225CE0BF9006D1B93 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B27CAC125CE0BF9006D1B93 /* Profile.swift */; };
 		6B27CACC25CE0ED3006D1B93 /* ProfileData.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B27CACB25CE0ED3006D1B93 /* ProfileData.json */; };
-		6B27CAD025CE19C6006D1B93 /* BucketList.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B27CACF25CE19C6006D1B93 /* BucketList.json */; };
 		6B27CAD625CE1D87006D1B93 /* Bucket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B27CAD525CE1D87006D1B93 /* Bucket.swift */; };
 		6B27CAE325CE2096006D1B93 /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B27CAE225CE2096006D1B93 /* ProfileHost.swift */; };
 		6B27CAE925CE20F4006D1B93 /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B27CAE825CE20F4006D1B93 /* ProfileSummary.swift */; };
+		6B452DF425CF3529004C0C54 /* BucketList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B452DF325CF3529004C0C54 /* BucketList.swift */; };
+		6B452DF825CF3935004C0C54 /* BucketDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B452DF725CF3935004C0C54 /* BucketDetail.swift */; };
+		6B452DFF25CF4760004C0C54 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B452DFE25CF4760004C0C54 /* FavoriteButton.swift */; };
+		6B452E0925CF4F9C004C0C54 /* CategoryHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B452E0825CF4F9C004C0C54 /* CategoryHome.swift */; };
+		6B452E0D25CF50D5004C0C54 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B452E0C25CF50D5004C0C54 /* CategoryRow.swift */; };
+		6B452E1125CF5603004C0C54 /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B452E1025CF5603004C0C54 /* CategoryItem.swift */; };
+		6B452E1525CF657F004C0C54 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B452E1425CF657F004C0C54 /* ContentView.swift */; };
 		6B56312F25CE2BFE009F34D8 /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B56312E25CE2BFE009F34D8 /* ProfileEditor.swift */; };
 		6B8AA1C225C9C39A00E3B782 /* WanderBucketApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8AA1C125C9C39A00E3B782 /* WanderBucketApp.swift */; };
 		6B8AA1C425C9C39A00E3B782 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8AA1C325C9C39A00E3B782 /* LoginScreen.swift */; };
@@ -114,10 +120,16 @@
 		6B27CAB925CE0AFD006D1B93 /* ModelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		6B27CAC125CE0BF9006D1B93 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		6B27CACB25CE0ED3006D1B93 /* ProfileData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ProfileData.json; sourceTree = "<group>"; };
-		6B27CACF25CE19C6006D1B93 /* BucketList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = BucketList.json; path = WanderBucket/Resources/BucketList.json; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.json; };
 		6B27CAD525CE1D87006D1B93 /* Bucket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bucket.swift; sourceTree = "<group>"; };
 		6B27CAE225CE2096006D1B93 /* ProfileHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHost.swift; sourceTree = "<group>"; };
 		6B27CAE825CE20F4006D1B93 /* ProfileSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
+		6B452DF325CF3529004C0C54 /* BucketList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketList.swift; sourceTree = "<group>"; };
+		6B452DF725CF3935004C0C54 /* BucketDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketDetail.swift; sourceTree = "<group>"; };
+		6B452DFE25CF4760004C0C54 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
+		6B452E0825CF4F9C004C0C54 /* CategoryHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHome.swift; sourceTree = "<group>"; };
+		6B452E0C25CF50D5004C0C54 /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
+		6B452E1025CF5603004C0C54 /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
+		6B452E1425CF657F004C0C54 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6B56312E25CE2BFE009F34D8 /* ProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
 		6B8AA1BE25C9C39A00E3B782 /* WanderBucket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WanderBucket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B8AA1C125C9C39A00E3B782 /* WanderBucketApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WanderBucketApp.swift; sourceTree = "<group>"; };
@@ -166,14 +178,16 @@
 		6B27CAB025CE00E6006D1B93 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				6BFE9D2425CF133F003BC7AD /* Buckets */,
-				6B27CAE125CE1FB0006D1B93 /* Profiles */,
+				6B452E1825CF6784004C0C54 /* Categories */,
 				6BDB8C4625CA027100174CF2 /* OnBoardingScreen.swift */,
 				6B8AA1C325C9C39A00E3B782 /* LoginScreen.swift */,
 				6BAC47F325CB571400C5F7AE /* SignUpScreen.swift */,
 				6BDB8C3925C9D82600174CF2 /* GlobeScreen.swift */,
 				6BAC47FB25CB93A600C5F7AE /* ForgotPasswordScreen.swift */,
-				6BFE9D2525CF134E003BC7AD /* BucketRow.swift */,
+				6B452E1425CF657F004C0C54 /* ContentView.swift */,
+				6B452E0825CF4F9C004C0C54 /* CategoryHome.swift */,
+				6B452E0C25CF50D5004C0C54 /* CategoryRow.swift */,
+				6B452E1025CF5603004C0C54 /* CategoryItem.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -192,7 +206,6 @@
 			isa = PBXGroup;
 			children = (
 				6BBF754E25CF182B008D8DE7 /* bucketData.json */,
-				6B27CACF25CE19C6006D1B93 /* BucketList.json */,
 				6B27CACB25CE0ED3006D1B93 /* ProfileData.json */,
 			);
 			path = Resources;
@@ -215,6 +228,21 @@
 				6B8AA1C525C9C39D00E3B782 /* Assets.xcassets */,
 			);
 			path = Assets.xcassets;
+			sourceTree = "<group>";
+		};
+		6B452DFD25CF473E004C0C54 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6B452DFE25CF4760004C0C54 /* FavoriteButton.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6B452E1825CF6784004C0C54 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		6B8AA1B525C9C39A00E3B782 = {
@@ -244,6 +272,9 @@
 				6B8AA1CA25C9C39D00E3B782 /* Info.plist */,
 				6B452DE125CF1FEE004C0C54 /* Assets.xcassets */,
 				6B27CAB025CE00E6006D1B93 /* Views */,
+				6B452DFD25CF473E004C0C54 /* Helpers */,
+				6BFE9D2425CF133F003BC7AD /* Buckets */,
+				6B27CAE125CE1FB0006D1B93 /* Profiles */,
 				6B27CAB225CE00F7006D1B93 /* Model */,
 				6B27CAB325CE0116006D1B93 /* Resources */,
 				6B8AA1C725C9C39D00E3B782 /* Preview Content */,
@@ -283,6 +314,9 @@
 		6BFE9D2425CF133F003BC7AD /* Buckets */ = {
 			isa = PBXGroup;
 			children = (
+				6B452DF725CF3935004C0C54 /* BucketDetail.swift */,
+				6B452DF325CF3529004C0C54 /* BucketList.swift */,
+				6BFE9D2525CF134E003BC7AD /* BucketRow.swift */,
 			);
 			path = Buckets;
 			sourceTree = "<group>";
@@ -449,7 +483,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B27CAD025CE19C6006D1B93 /* BucketList.json in Resources */,
 				6B8AA1C925C9C39D00E3B782 /* Preview Assets.xcassets in Resources */,
 				6B27CACC25CE0ED3006D1B93 /* ProfileData.json in Resources */,
 				6BBF754F25CF182B008D8DE7 /* bucketData.json in Resources */,
@@ -480,6 +513,8 @@
 			files = (
 				6BAC47F425CB571400C5F7AE /* SignUpScreen.swift in Sources */,
 				6BAC47FC25CB93A600C5F7AE /* ForgotPasswordScreen.swift in Sources */,
+				6B452E1525CF657F004C0C54 /* ContentView.swift in Sources */,
+				6B452DF425CF3529004C0C54 /* BucketList.swift in Sources */,
 				6B56312F25CE2BFE009F34D8 /* ProfileEditor.swift in Sources */,
 				6BDB8C3A25C9D82600174CF2 /* GlobeScreen.swift in Sources */,
 				6B27CAE325CE2096006D1B93 /* ProfileHost.swift in Sources */,
@@ -487,11 +522,16 @@
 				6B8AA1C225C9C39A00E3B782 /* WanderBucketApp.swift in Sources */,
 				6BDB8C4725CA027100174CF2 /* OnBoardingScreen.swift in Sources */,
 				6B27CAD625CE1D87006D1B93 /* Bucket.swift in Sources */,
+				6B452E0925CF4F9C004C0C54 /* CategoryHome.swift in Sources */,
 				6B27CAC225CE0BF9006D1B93 /* Profile.swift in Sources */,
 				6B27CABA25CE0AFD006D1B93 /* ModelData.swift in Sources */,
 				6B27CAE925CE20F4006D1B93 /* ProfileSummary.swift in Sources */,
+				6B452DFF25CF4760004C0C54 /* FavoriteButton.swift in Sources */,
 				6BFE9D2625CF134E003BC7AD /* BucketRow.swift in Sources */,
+				6B452DF825CF3935004C0C54 /* BucketDetail.swift in Sources */,
 				6BFE9D1825CF0CE5003BC7AD /* ProfilePicture.swift in Sources */,
+				6B452E1125CF5603004C0C54 /* CategoryItem.swift in Sources */,
+				6B452E0D25CF50D5004C0C54 /* CategoryRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -73,6 +73,6 @@ struct GlobeView_Previews: PreviewProvider {
             .background(Color.black)
             .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             .preferredColorScheme(.dark)
-            //.environmentObject(ModelData())
+            .environmentObject(ModelData())
     }
 }

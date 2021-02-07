@@ -9,12 +9,25 @@ import Foundation
 import Combine
 
 
-//final class ModelData: ObservableObject {
+final class ModelData: ObservableObject {
+    @Published var buckets: [Bucket] = load("bucketData.json")
+    
+    var stateCategories: [String: [Bucket]] {
+        Dictionary(
+            grouping: buckets,
+            by: { $0.state.rawValue }
+        )
+    }
+    
+    var features: [Bucket] {
+        buckets.filter { $0.isFeatured }
+    }
+}
+
+
 //    @Published var buckets: [Bucket] = load("BucketList.json")
 //    @Published var profile = Profile.default
-//}
-
-var buckets: [Bucket] = load("bucketData.json")
+//var buckets: [Bucket] = load("bucketData.json")
 //var buckets: [Bucket] = load("BucketList.json")
 
 func load<T: Decodable>(_ filename: String) -> T {

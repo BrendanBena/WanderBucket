@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct ProfilePicture: View {
+    var image: Image
     var body: some View {
-        Image("mattMoler")
+        image
+            .resizable()
             .clipShape(Circle())
             .overlay(Circle().stroke(Color.white, lineWidth: 4))
             .shadow(radius: 7)
@@ -18,6 +20,6 @@ struct ProfilePicture: View {
 
 struct ProfilePicture_Previews: PreviewProvider {
     static var previews: some View {
-        ProfilePicture()
+        ProfilePicture(image: Image("brendanBena"))
     }
 }
