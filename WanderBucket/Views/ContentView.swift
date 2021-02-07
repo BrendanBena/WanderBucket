@@ -14,6 +14,7 @@ struct ContentView: View {
     enum Tab {
         case featured
         case list
+        case map
     }
 
     var body: some View {
@@ -23,6 +24,11 @@ struct ContentView: View {
                     Label("Featured", systemImage: "star")
                 }
                 .tag(Tab.featured)
+            GlobeView()
+                .tabItem {
+                    Label("World", systemImage: "home")
+                }
+                .tag(Tab.map)
             BucketList()
                 .tabItem {
                     Label("List", systemImage: "list.bullet")
