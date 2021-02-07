@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "username" : "BrendanBena",
+        "name": "Brendan Bena",
+        "email": "bbena004@drury.edu",
+        "age": 22,
+        "nationality": "United States",
+        "gender":"male",
+        "profilePicture": "brendanBena",
+        "prefersNotifications": "true"
+    },
+    {
+        "id": 2,
+        "username" : "MattMoler",
+        "name": "Matt Moler",
+        "email": "mmoler@drury.edu",
+        "age": 21,
+        "nationality": "United States",
+        "gender":"male",
+        "profilePicture": "mattMoler",
+        "prefersNotifications": "true"
+    }
+]
