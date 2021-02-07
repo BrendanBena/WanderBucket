@@ -13,10 +13,10 @@ final class ModelData: ObservableObject {
     @Published var buckets: [Bucket] = load("bucketData.json")
     @Published var profile = Profile.default
     
-    var stateCategories: [String: [Bucket]] {
+    var countryCategories: [String: [Bucket]] {
         Dictionary(
             grouping: buckets,
-            by: { $0.state.rawValue }
+            by: { $0.country.rawValue }
         )
     }
     

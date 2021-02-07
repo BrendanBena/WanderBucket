@@ -21,8 +21,8 @@ struct CategoryHome: View {
                     .clipped()
                     .listRowInsets(EdgeInsets())
                 
-                ForEach(modelData.stateCategories.keys.sorted(), id: \.self) { key in
-                    CategoryRow(categoryName: key, items: modelData.stateCategories[key]!)
+                ForEach(modelData.countryCategories.keys.sorted(), id: \.self) { key in
+                    CategoryRow(categoryName: key, items: modelData.countryCategories[key]!)
                 }
                 .listRowInsets(EdgeInsets())
             }

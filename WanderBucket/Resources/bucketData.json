@@ -19,7 +19,7 @@
         "id" : 101,
         "userId": 1,
         "name": "New York Bucket",
-        "country": "United State",
+        "country": "United States",
         "state": "New York",
         "city": "New York",
         "description": "New York sample Bucket",
@@ -30,5 +30,165 @@
         },
         "isFavorite" : false,
         "isFeatured" : true
-    }
+    },
+    {
+        "id" : 102,
+        "userId": 1,
+        "name": "Vancouver Bucket",
+        "country": "Canada",
+        "state": "British Columbia",
+        "city": "Vancouver",
+        "description": "Vancouver sample Bucket",
+        "imageName": "bucketVancouver",
+        "coordinates": {
+            "latitude": 49.246292,
+            "longitude": -123.116226
+        },
+        "isFavorite" : false,
+        "isFeatured" : true
+    },
+    {
+        "id" : 103,
+        "userId": 1,
+        "name": "San Francisco Bucket",
+        "country": "United States",
+        "state": "California",
+        "city": "San Francisco",
+        "description": "San Francisco sample Bucket",
+        "imageName": "bucketSanFrancisco",
+        "coordinates": {
+            "latitude": 37.773972,
+            "longitude": -122.431297
+        },
+        "isFavorite" : false,
+        "isFeatured" : true
+    },
+    {
+        "id" : 104,
+        "userId": 1,
+        "name": "Toronto Bucket",
+        "country": "Canada",
+        "state": "Ontario",
+        "city": "Toronto",
+        "description": "Toronto sample Bucket",
+        "imageName": "bucketToronto",
+        "coordinates": {
+            "latitude": 43.6532,
+            "longitude": -79.421371
+        },
+        "isFavorite" : false,
+        "isFeatured" : true
+    },
+    {
+        "id" : 105,
+        "userId": 1,
+        "name": "Montreal Bucket",
+        "country": "Canada",
+        "state": "Quebec",
+        "city": "Montreal",
+        "description": "Montreal sample Bucket",
+        "imageName": "bucketMontreal",
+        "coordinates": {
+            "latitude": 45.5017,
+            "longitude": -73.656830
+        },
+        "isFavorite" : false,
+        "isFeatured" : true
+    },
+    {
+        "id" : 106,
+        "userId": 1,
+        "name": "Munich Bucket",
+        "country": "Germany",
+        "state": "Bavaria",
+        "city": "Munich",
+        "description": "Montreal sample Bucket",
+        "imageName": "bucketMunich",
+        "coordinates": {
+            "latitude": 48.137154,
+            "longitude": 11.576124
+        },
+        "isFavorite" : false,
+        "isFeatured" : true
+    },
+    {
+        "id" : 107,
+        "userId": 1,
+        "name": "Hamburg Bucket",
+        "country": "Germany",
+        "state": "Hamburg",
+        "city": "Hamburg",
+        "description": "Hamburg sample Bucket",
+        "imageName": "bucketHamburg",
+        "coordinates": {
+            "latitude": 53.551086,
+            "longitude": 9.993682
+        },
+        "isFavorite" : false,
+        "isFeatured" : true
+    },
+    {
+        "id" : 108,
+        "userId": 1,
+        "name": "Berlin Bucket",
+        "country": "Germany",
+        "state": "Berlin",
+        "city": "Berlin",
+        "description": "Berlin sample Bucket",
+        "imageName": "bucketBerlin",
+        "coordinates": {
+            "latitude": 52.531677,
+            "longitude": 13.381777
+        },
+        "isFavorite" : false,
+        "isFeatured" : true
+    },
+    {
+        "id" : 109,
+        "userId": 1,
+        "name": "Frankfurt Bucket",
+        "country": "Germany",
+        "state": "Hessen",
+        "city": "Frankfurt",
+        "description": "Frankfurt sample Bucket",
+        "imageName": "bucketFrankfurt",
+        "coordinates": {
+            "latitude": 50.1109,
+            "longitude": 8.6821
+        },
+        "isFavorite" : false,
+        "isFeatured" : true
+    },
+    {
+        "id" : 110,
+        "userId": 1,
+        "name": "Calgary Bucket",
+        "country": "Canada",
+        "state": "Alberta",
+        "city": "Calgary",
+        "description": "Calgary sample Bucket",
+        "imageName": "bucketCalgary",
+        "coordinates": {
+            "latitude": 51.044270,
+            "longitude": -114.062019
+        },
+        "isFavorite" : false,
+        "isFeatured" : true
+    },
+    {
+        "id" : 111,
+        "userId": 1,
+        "name": "Miami Bucket",
+        "country": "United States",
+        "state": "Florida",
+        "city": "Miami",
+        "description": "Miami sample Bucket",
+        "imageName": "bucketMiami",
+        "coordinates": {
+            "latitude": 25.761681,
+            "longitude": -80.191788
+        },
+        "isFavorite" : false,
+        "isFeatured" : true
+    },
 ]
