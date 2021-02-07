@@ -7,7 +7,8 @@
         "age": 22,
         "nationality": "United States",
         "gender":"male",
-        "profilePicture": "brendanBena"
+        "profilePicture": "brendanBena",
+        "prefersNotifications": "true"
     },
     {
         "id": 2,
@@ -17,6 +18,7 @@
         "age": 21,
         "nationality": "United States",
         "gender":"male",
-        "profilePicture": "mattMoler"
+        "profilePicture": "mattMoler",
+        "prefersNotifications": "true"
     }
 ]

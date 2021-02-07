@@ -17,6 +17,7 @@ struct Profile {
                                    age: 22,
                                    nationality: "United States",
                                    gender: "male",
+                                   prefersNotifications: true,
                                    profilePicture: "brendanBena")
     var id: Int
     var username: String
@@ -25,6 +26,7 @@ struct Profile {
     var age: Int
     var nationality: String
     var gender: String
+    var prefersNotifications: Bool
     
     private var profilePicture: String
     var picture : Image {

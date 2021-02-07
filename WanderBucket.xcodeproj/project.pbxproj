@@ -178,16 +178,12 @@
 		6B27CAB025CE00E6006D1B93 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				6B452E1825CF6784004C0C54 /* Categories */,
 				6BDB8C4625CA027100174CF2 /* OnBoardingScreen.swift */,
 				6B8AA1C325C9C39A00E3B782 /* LoginScreen.swift */,
 				6BAC47F325CB571400C5F7AE /* SignUpScreen.swift */,
 				6BDB8C3925C9D82600174CF2 /* GlobeScreen.swift */,
 				6BAC47FB25CB93A600C5F7AE /* ForgotPasswordScreen.swift */,
 				6B452E1425CF657F004C0C54 /* ContentView.swift */,
-				6B452E0825CF4F9C004C0C54 /* CategoryHome.swift */,
-				6B452E0C25CF50D5004C0C54 /* CategoryRow.swift */,
-				6B452E1025CF5603004C0C54 /* CategoryItem.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -241,6 +237,9 @@
 		6B452E1825CF6784004C0C54 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				6B452E0825CF4F9C004C0C54 /* CategoryHome.swift */,
+				6B452E0C25CF50D5004C0C54 /* CategoryRow.swift */,
+				6B452E1025CF5603004C0C54 /* CategoryItem.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -272,6 +271,7 @@
 				6B8AA1CA25C9C39D00E3B782 /* Info.plist */,
 				6B452DE125CF1FEE004C0C54 /* Assets.xcassets */,
 				6B27CAB025CE00E6006D1B93 /* Views */,
+				6B452E1825CF6784004C0C54 /* Categories */,
 				6B452DFD25CF473E004C0C54 /* Helpers */,
 				6BFE9D2425CF133F003BC7AD /* Buckets */,
 				6B27CAE125CE1FB0006D1B93 /* Profiles */,

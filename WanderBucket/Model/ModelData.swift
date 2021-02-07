@@ -11,6 +11,7 @@ import Combine
 
 final class ModelData: ObservableObject {
     @Published var buckets: [Bucket] = load("bucketData.json")
+    @Published var profile = Profile.default
     
     var stateCategories: [String: [Bucket]] {
         Dictionary(
