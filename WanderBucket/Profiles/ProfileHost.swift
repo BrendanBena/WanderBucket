@@ -26,7 +26,8 @@ struct ProfileHost: View {
             }
             if editMode?.wrappedValue == .inactive {
                 ProfileSummary(profile: modelData.profile)
-            } else {
+            }
+            else {
                 ProfileEditor(profile: $draftProfile)
                     .onAppear {
                         draftProfile = modelData.profile
