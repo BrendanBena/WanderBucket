@@ -18,16 +18,19 @@ struct BucketDetail: View {
     
     var body: some View {
             VStack(alignment: .leading) {
+                bucket.image
+                    .resizable()
+                    .frame(height: 200)
                 HStack{
                     Text(bucket.name)
-                        .font(.title)
+                        .font(.largeTitle)
                         .foregroundColor(.primary)
                     FavoriteButton(isSet: $modelData.buckets[bucketIndex].isFavorite)
 
                 }
 
                 HStack {
-                    Text(bucket.description)
+                    Text("\(bucket.city), \(bucket.state)")
                     Spacer()
                     Text(bucket.country.rawValue)
                 }
@@ -36,13 +39,42 @@ struct BucketDetail: View {
 
                 Divider()
 
-                Text("About \(bucket.name)")
+                Text("\(bucket.name) To Do's")
                     .font(.title2)
-                Text("Descriptive text goes here.")
+                Text("\(bucket.description)")
+                    .font(.subheadline)
+                
+                List {
+                    
+                    HStack{
+                        Image(systemName: "checkmark.square")
+                        Text("Swim")
+                    }
+                    HStack{
+                        Image(systemName: "checkmark.square")
+                        Text("Bike")
+                    }
+                    HStack{
+                        Image(systemName: "checkmark.square")
+                        Text("Run")
+                    }
+                    HStack{
+                        Image(systemName: "square")
+                        Text("Eat")
+                    }
+                    HStack{
+                        Image(systemName: "square")
+                        Text("Party")
+                    }
+                    HStack{
+                        Image(systemName: "square")
+                        Text("Sleep")
+                    }
+                }
+                
             }
-            .padding()
-
-            Spacer()
+        .padding()
+        Spacer()
     }
 }
 

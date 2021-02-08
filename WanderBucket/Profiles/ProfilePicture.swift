@@ -14,6 +14,7 @@ struct ProfilePicture: View {
             .resizable()
             .clipShape(Circle())
             .overlay(Circle().stroke(Color.white, lineWidth: 4))
+            .frame(width: 90.0, height: 90.0)
             .shadow(radius: 7)
     }
 }

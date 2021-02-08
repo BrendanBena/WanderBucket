@@ -6,7 +6,7 @@
         "email": "bbena004@drury.edu",
         "age": 22,
         "nationality": "United States",
-        "gender":"male",
+        "gender":"Male",
         "profilePicture": "brendanBena",
         "prefersNotifications": "true"
     },
@@ -17,7 +17,7 @@
         "email": "mmoler@drury.edu",
         "age": 21,
         "nationality": "United States",
-        "gender":"male",
+        "gender":"Male",
         "profilePicture": "mattMoler",
         "prefersNotifications": "true"
     }
