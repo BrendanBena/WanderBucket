@@ -50,4 +50,5 @@ struct Bucket: Hashable, Codable, Identifiable {
         var latitude: Double
         var longitude: Double
     }
+
 }

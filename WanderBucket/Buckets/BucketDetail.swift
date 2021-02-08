@@ -43,34 +43,37 @@ struct BucketDetail: View {
                     .font(.title2)
                 Text("\(bucket.description)")
                     .font(.subheadline)
+                    .foregroundColor(.secondary)
                 
-                List {
-                    
-                    HStack{
-                        Image(systemName: "checkmark.square")
-                        Text("Swim")
-                    }
-                    HStack{
-                        Image(systemName: "checkmark.square")
-                        Text("Bike")
-                    }
-                    HStack{
-                        Image(systemName: "checkmark.square")
-                        Text("Run")
-                    }
-                    HStack{
-                        Image(systemName: "square")
-                        Text("Eat")
-                    }
-                    HStack{
-                        Image(systemName: "square")
-                        Text("Party")
-                    }
-                    HStack{
-                        Image(systemName: "square")
-                        Text("Sleep")
-                    }
-                }
+                ToDoList() 
+                
+//                List {
+//
+//                    HStack{
+//                        Image(systemName: "checkmark.square")
+//                        Text("Swim")
+//                    }
+//                    HStack{
+//                        Image(systemName: "checkmark.square")
+//                        Text("Bike")
+//                    }
+//                    HStack{
+//                        Image(systemName: "checkmark.square")
+//                        Text("Run")
+//                    }
+//                    HStack{
+//                        Image(systemName: "square")
+//                        Text("Eat")
+//                    }
+//                    HStack{
+//                        Image(systemName: "square")
+//                        Text("Party")
+//                    }
+//                    HStack{
+//                        Image(systemName: "square")
+//                        Text("Sleep")
+//                    }
+//                }
                 
             }
         .padding()

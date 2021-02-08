@@ -21,6 +21,9 @@
 		6B452E1125CF5603004C0C54 /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B452E1025CF5603004C0C54 /* CategoryItem.swift */; };
 		6B452E1525CF657F004C0C54 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B452E1425CF657F004C0C54 /* ContentView.swift */; };
 		6B56312F25CE2BFE009F34D8 /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B56312E25CE2BFE009F34D8 /* ProfileEditor.swift */; };
+		6B846C2425D1A634006F27A1 /* ToDoListCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B846C2325D1A634006F27A1 /* ToDoListCheck.swift */; };
+		6B846C3125D1ADC4006F27A1 /* ToDoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B846C3025D1ADC4006F27A1 /* ToDoList.swift */; };
+		6B846C4125D1B572006F27A1 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B846C4025D1B572006F27A1 /* ToDo.swift */; };
 		6B8AA1C225C9C39A00E3B782 /* WanderBucketApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8AA1C125C9C39A00E3B782 /* WanderBucketApp.swift */; };
 		6B8AA1C425C9C39A00E3B782 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8AA1C325C9C39A00E3B782 /* LoginScreen.swift */; };
 		6B8AA1C625C9C39D00E3B782 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B8AA1C525C9C39D00E3B782 /* Assets.xcassets */; };
@@ -135,6 +138,9 @@
 		6B452E1025CF5603004C0C54 /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
 		6B452E1425CF657F004C0C54 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6B56312E25CE2BFE009F34D8 /* ProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
+		6B846C2325D1A634006F27A1 /* ToDoListCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListCheck.swift; sourceTree = "<group>"; };
+		6B846C3025D1ADC4006F27A1 /* ToDoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoList.swift; sourceTree = "<group>"; };
+		6B846C4025D1B572006F27A1 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 		6B8AA1BE25C9C39A00E3B782 /* WanderBucket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WanderBucket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B8AA1C125C9C39A00E3B782 /* WanderBucketApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WanderBucketApp.swift; sourceTree = "<group>"; };
 		6B8AA1C325C9C39A00E3B782 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -202,6 +208,7 @@
 				6B27CAC125CE0BF9006D1B93 /* Profile.swift */,
 				6B27CAD525CE1D87006D1B93 /* Bucket.swift */,
 				6B27CAB925CE0AFD006D1B93 /* ModelData.swift */,
+				6B846C4025D1B572006F27A1 /* ToDo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -238,6 +245,8 @@
 			isa = PBXGroup;
 			children = (
 				6B452DFE25CF4760004C0C54 /* FavoriteButton.swift */,
+				6B846C2325D1A634006F27A1 /* ToDoListCheck.swift */,
+				6B846C3025D1ADC4006F27A1 /* ToDoList.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -541,9 +550,12 @@
 				6B27CAE325CE2096006D1B93 /* ProfileHost.swift in Sources */,
 				6B8AA1C425C9C39A00E3B782 /* LoginScreen.swift in Sources */,
 				6B8AA1C225C9C39A00E3B782 /* WanderBucketApp.swift in Sources */,
+				6B846C3125D1ADC4006F27A1 /* ToDoList.swift in Sources */,
 				6BE93AB625D080F50082518F /* PageControl.swift in Sources */,
 				6BE93ABE25D081110082518F /* PageViewController.swift in Sources */,
 				6BDB8C4725CA027100174CF2 /* OnBoardingScreen.swift in Sources */,
+				6B846C2425D1A634006F27A1 /* ToDoListCheck.swift in Sources */,
+				6B846C4125D1B572006F27A1 /* ToDo.swift in Sources */,
 				6BE93AB025D080E10082518F /* FeatureCard.swift in Sources */,
 				6B27CAD625CE1D87006D1B93 /* Bucket.swift in Sources */,
 				6B452E0925CF4F9C004C0C54 /* CategoryHome.swift in Sources */,
