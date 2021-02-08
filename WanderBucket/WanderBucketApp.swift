@@ -14,7 +14,8 @@ struct WanderBucketApp: App {
     
     var body: some Scene {
         WindowGroup {
-            LoginScreen()
+            ContentView()
+            //LoginScreen()
                 .environmentObject(modelData)
         }
     }

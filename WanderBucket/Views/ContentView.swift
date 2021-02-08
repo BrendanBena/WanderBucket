@@ -14,6 +14,7 @@ struct ContentView: View {
     enum Tab {
         case featured
         case list
+        case map
     }
 
     var body: some View {
@@ -23,6 +24,11 @@ struct ContentView: View {
                     Label("Featured", systemImage: "star")
                 }
                 .tag(Tab.featured)
+            GlobeView()
+                .tabItem {
+                    Label("World", systemImage: "cloud")
+                }
+                .tag(Tab.map)
             BucketList()
                 .tabItem {
                     Label("List", systemImage: "list.bullet")
@@ -35,6 +41,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
             .environmentObject(ModelData())
     }
 }

@@ -14,15 +14,12 @@ struct CategoryHome: View {
     var body: some View {
         NavigationView {
             List {
-                modelData.features[0].image
-                    .resizable()
-                    .scaledToFill()
-                    .frame(height: 200)
-                    .clipped()
+                PageView(pages: modelData.features.map { FeatureCard(bucket: $0) })
+                    .aspectRatio(3 / 2, contentMode: .fit)
                     .listRowInsets(EdgeInsets())
                 
-                ForEach(modelData.stateCategories.keys.sorted(), id: \.self) { key in
-                    CategoryRow(categoryName: key, items: modelData.stateCategories[key]!)
+                ForEach(modelData.countryCategories.keys.sorted(), id: \.self) { key in
+                    CategoryRow(categoryName: key, items: modelData.countryCategories[key]!)
                 }
                 .listRowInsets(EdgeInsets())
             }

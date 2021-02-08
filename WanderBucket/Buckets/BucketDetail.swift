@@ -29,7 +29,7 @@ struct BucketDetail: View {
                 HStack {
                     Text(bucket.description)
                     Spacer()
-                    Text(bucket.state.rawValue)
+                    Text(bucket.country.rawValue)
                 }
                 .font(.subheadline)
                 .foregroundColor(.secondary)
