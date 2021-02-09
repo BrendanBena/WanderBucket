@@ -13,6 +13,7 @@
             "longitude": -117.161087
         },
         "isFavorite" : true,
+        "isFinished" : false,
         "isFeatured" : true
     },
     {
@@ -29,6 +30,7 @@
             "longitude": -75.000000
         },
         "isFavorite" : false,
+        "isFinished" : false,
         "isFeatured" : false
     },
     {
@@ -45,6 +47,7 @@
             "longitude": -123.116226
         },
         "isFavorite" : false,
+        "isFinished" : false,
         "isFeatured" : true
     },
     {
@@ -61,6 +64,7 @@
             "longitude": -122.431297
         },
         "isFavorite" : false,
+        "isFinished" : false,
         "isFeatured" : false
     },
     {
@@ -77,6 +81,7 @@
             "longitude": -79.421371
         },
         "isFavorite" : false,
+        "isFinished" : false,
         "isFeatured" : false
     },
     {
@@ -93,6 +98,7 @@
             "longitude": -73.656830
         },
         "isFavorite" : false,
+        "isFinished" : false,
         "isFeatured" : false
     },
     {
@@ -109,6 +115,7 @@
             "longitude": 11.576124
         },
         "isFavorite" : false,
+        "isFinished" : false,
         "isFeatured" : true
     },
     {
@@ -125,6 +132,7 @@
             "longitude": 9.993682
         },
         "isFavorite" : false,
+        "isFinished" : false,
         "isFeatured" : false
     },
     {
@@ -141,6 +149,7 @@
             "longitude": 13.381777
         },
         "isFavorite" : false,
+        "isFinished" : false,
         "isFeatured" : false
     },
     {
@@ -157,6 +166,7 @@
             "longitude": 8.6821
         },
         "isFavorite" : false,
+        "isFinished" : false,
         "isFeatured" : false
     },
     {
@@ -173,6 +183,7 @@
             "longitude": -114.062019
         },
         "isFavorite" : false,
+        "isFinished" : false,
         "isFeatured" : false
     },
     {
@@ -189,6 +200,7 @@
             "longitude": -80.191788
         },
         "isFavorite" : false,
+        "isFinished" : false,
         "isFeatured" : false
-    },
+    }
 ]

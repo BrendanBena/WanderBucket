@@ -18,16 +18,22 @@ struct BucketDetail: View {
     
     var body: some View {
             VStack(alignment: .leading) {
+                bucket.image
+                    .resizable()
+                    .frame(height: 200)
                 HStack{
                     Text(bucket.name)
-                        .font(.title)
+                        .font(.largeTitle)
                         .foregroundColor(.primary)
+                    Spacer()
+                    FinishedButton(isSet: $modelData.buckets[bucketIndex].isFinished)
+                    Spacer()
                     FavoriteButton(isSet: $modelData.buckets[bucketIndex].isFavorite)
 
                 }
 
                 HStack {
-                    Text(bucket.description)
+                    Text("\(bucket.city), \(bucket.state)")
                     Spacer()
                     Text(bucket.country.rawValue)
                 }
@@ -36,13 +42,16 @@ struct BucketDetail: View {
 
                 Divider()
 
-                Text("About \(bucket.name)")
+                Text("\(bucket.name) To Do's")
                     .font(.title2)
-                Text("Descriptive text goes here.")
+                Text("\(bucket.description)")
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
+                
+                ToDoList() 
             }
-            .padding()
-
-            Spacer()
+        .padding()
+        Spacer()
     }
 }
 

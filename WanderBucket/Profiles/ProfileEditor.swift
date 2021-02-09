@@ -16,6 +16,31 @@ struct ProfileEditor: View {
                 Divider()
                 TextField("Username", text: $profile.username)
             }
+            HStack {
+                Text("Name").bold()
+                Divider()
+                TextField("Name", text: $profile.name)
+            }
+            HStack {
+                Text("From").bold()
+                Divider()
+                TextField("From", text: $profile.nationality)
+            }
+            HStack {
+                Text("Age").bold()
+                Divider()
+                TextField("Age", value: $profile.age, formatter: NumberFormatter())
+            }
+            HStack {
+                Text("Email").bold()
+                Divider()
+                TextField("Email", text: $profile.email)
+            }
+            HStack {
+                Text("Gender").bold()
+                Divider()
+                TextField("Gender", text: $profile.gender)
+            }
             Toggle(isOn: $profile.prefersNotifications) {
                 Text("Enable Notifications").bold()
             }

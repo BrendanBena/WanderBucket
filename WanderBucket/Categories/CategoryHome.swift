@@ -14,7 +14,8 @@ struct CategoryHome: View {
     var body: some View {
         NavigationView {
             List {
-                PageView(pages: modelData.features.map { FeatureCard(bucket: $0) })
+                PageView(pages: modelData.features.map {
+                            FeatureCard(bucket: $0) })
                     .aspectRatio(3 / 2, contentMode: .fit)
                     .listRowInsets(EdgeInsets())
                 

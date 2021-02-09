@@ -11,6 +11,7 @@ struct BucketList: View {
     
     @EnvironmentObject var modelData: ModelData
     @State private var showFavoritesOnly = false
+    @State private var showingProfile = false
     
     var filteredBuckets: [Bucket] {
         modelData.buckets.filter { bucket in
@@ -31,6 +32,16 @@ struct BucketList: View {
                 }
             }
             .navigationTitle("My Bucketlist")
+            .toolbar {
+                Button(action: { showingProfile.toggle() }) {
+                    Image(systemName: "person.crop.circle")
+                        .accessibilityLabel("User Profile")
+                }
+            }
+            .sheet(isPresented: $showingProfile) {
+                ProfileHost()
+                    .environmentObject(modelData)
+            }
         }
     }
 }

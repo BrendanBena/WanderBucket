@@ -32,7 +32,7 @@
 		<key>UIImageName</key>
 		<string>Globe</string>
 		<key>UIImageRespectsSafeAreaInsets</key>
-		<false/>
+		<true/>
 		<key>UIColorName</key>
 		<string>LaunchScreenColor</string>
 	</dict>
