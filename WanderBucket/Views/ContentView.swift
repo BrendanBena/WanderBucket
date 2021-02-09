@@ -21,14 +21,14 @@ struct ContentView: View {
         TabView(selection: $selection) {
             CategoryHome()
                 .tabItem {
-                    Label("Buckets", systemImage: "star")
+                    Label("Buckets", systemImage: "star.fill")
                 }
                 .tag(Tab.featured)
             GlobeView()
                 .tabItem {
                     //Image(systemName: "home")
                     //Text("World")
-                    Label("World", systemImage: "cloud")
+                    Label("World", systemImage: "homekit")
                 }
                 .tag(Tab.map)
             BucketList()

@@ -18,43 +18,69 @@ struct ProfileSummary: View {
                     ProfilePicture(image: profile.picture)
                     Text(profile.username)
                         .fontWeight(.black)
-                    .bold()
+                        .bold()
                         .font(.largeTitle)
                 }
+                .padding()
                 
-                Spacer()
+                HStack {
+                    Text("Name: ").font(.title3).fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                    Spacer()
+                    Text((profile.name)).font(.title3)
+                }
+                HStack {
+                    Text("From: ").font(.title3).fontWeight(.bold)
+                    Spacer()
+                    Text((profile.nationality)).font(.title3)
+                }
+                HStack {
+                    Text("Age: ").font(.title3).fontWeight(.bold)
+                    Spacer()
+                    Text("\(profile.age)").font(.title3)
+                }
+                HStack {
+                    Text("Email: ").font(.title3).fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                    Spacer()
+                    Text((profile.email)).font(.title3)
+                }
+                HStack {
+                    Text("Gender: ").font(.title3).fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                    Spacer()
+                    Text((profile.gender)).font(.title3)
+                }
                 
-                Text("Name: ").font(.title3).fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/) + Text((profile.name)).font(.title3)
-                Text("From: ").font(.title3).fontWeight(.bold) + Text((profile.nationality)).font(.title3)
-                Text("Age: ").font(.title3).fontWeight(.bold) + Text("\(profile.age)").font(.title3)
-                Text("Email: ").font(.title3).fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/) + Text((profile.email)).font(.title3)
-                
-                
-//                Text("From: \(profile.nationality)")
-//                    .font(.title3)
-//                    .fontWeight(.medium)
-//
-//                Text("Age:  \(profile.age)")
-//                    .font(.title3)
-//                    .fontWeight(.medium)
-//
-//                Text("Email:  \(profile.email)")
-//                    .font(.title3)
-//                    .fontWeight(.medium)
-                
-                Spacer()
+                //Spacer()
                 
                 Text("Favorite Buckets: ")
                     .font(.title)
                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                 
-                // 
+                let buckets = ModelData().buckets
+                CategoryRow(
+                    categoryName: "",
+                    items: Array(buckets.prefix(5))
+                )
+                .listRowInsets(EdgeInsets())
+                .listStyle(InsetListStyle())
+//                List {
+//                    ForEach(modelData.countryCategories.keys.sorted(), id: \.self) { key in
+//                        CategoryRow(categoryName: key, items: modelData.countryCategories[key]!)
+//                    }
+//                    .listRowInsets(EdgeInsets())
+//                }
                 
-                Spacer()
+                //Spacer()
                 
                 Text("To-Do Buckets: ")
                     .font(.title)
                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+
+                CategoryRow(
+                    categoryName: "",
+                    items: Array(buckets.prefix(5))
+                )
+                .listRowInsets(EdgeInsets())
+                .listStyle(InsetListStyle())
             }
             .padding()
         }

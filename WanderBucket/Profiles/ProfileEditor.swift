@@ -36,6 +36,11 @@ struct ProfileEditor: View {
                 Divider()
                 TextField("Email", text: $profile.email)
             }
+            HStack {
+                Text("Gender").bold()
+                Divider()
+                TextField("Gender", text: $profile.gender)
+            }
             Toggle(isOn: $profile.prefersNotifications) {
                 Text("Enable Notifications").bold()
             }

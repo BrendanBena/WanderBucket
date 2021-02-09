@@ -17,8 +17,12 @@ struct Location {
 
 struct GlobeView: View {
     
+//    @EnvironmentObject var modelData: ModelData
+//    var bucketLocations = [Bucket] {
+//        buckets.coordinates { bucket in
+//            (!showFavoritesOnly || bucket.isFavorite)
+//        }
     //@Environment(\.colorScheme) var colorScheme
-    //@EnvironmentObject var modelData: ModelData
     //@State private var showingProfile = false
     
     @State var locations = [

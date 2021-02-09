@@ -46,35 +46,6 @@ struct BucketDetail: View {
                     .foregroundColor(.secondary)
                 
                 ToDoList() 
-                
-//                List {
-//
-//                    HStack{
-//                        Image(systemName: "checkmark.square")
-//                        Text("Swim")
-//                    }
-//                    HStack{
-//                        Image(systemName: "checkmark.square")
-//                        Text("Bike")
-//                    }
-//                    HStack{
-//                        Image(systemName: "checkmark.square")
-//                        Text("Run")
-//                    }
-//                    HStack{
-//                        Image(systemName: "square")
-//                        Text("Eat")
-//                    }
-//                    HStack{
-//                        Image(systemName: "square")
-//                        Text("Party")
-//                    }
-//                    HStack{
-//                        Image(systemName: "square")
-//                        Text("Sleep")
-//                    }
-//                }
-                
             }
         .padding()
         Spacer()

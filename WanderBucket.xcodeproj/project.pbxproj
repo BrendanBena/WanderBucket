@@ -24,6 +24,7 @@
 		6B846C2425D1A634006F27A1 /* ToDoListCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B846C2325D1A634006F27A1 /* ToDoListCheck.swift */; };
 		6B846C3125D1ADC4006F27A1 /* ToDoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B846C3025D1ADC4006F27A1 /* ToDoList.swift */; };
 		6B846C4125D1B572006F27A1 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B846C4025D1B572006F27A1 /* ToDo.swift */; };
+		6B846C4A25D2158A006F27A1 /* FinishedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B846C4925D2158A006F27A1 /* FinishedButton.swift */; };
 		6B8AA1C225C9C39A00E3B782 /* WanderBucketApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8AA1C125C9C39A00E3B782 /* WanderBucketApp.swift */; };
 		6B8AA1C425C9C39A00E3B782 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8AA1C325C9C39A00E3B782 /* LoginScreen.swift */; };
 		6B8AA1C625C9C39D00E3B782 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B8AA1C525C9C39D00E3B782 /* Assets.xcassets */; };
@@ -141,6 +142,7 @@
 		6B846C2325D1A634006F27A1 /* ToDoListCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListCheck.swift; sourceTree = "<group>"; };
 		6B846C3025D1ADC4006F27A1 /* ToDoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoList.swift; sourceTree = "<group>"; };
 		6B846C4025D1B572006F27A1 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
+		6B846C4925D2158A006F27A1 /* FinishedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedButton.swift; sourceTree = "<group>"; };
 		6B8AA1BE25C9C39A00E3B782 /* WanderBucket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WanderBucket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B8AA1C125C9C39A00E3B782 /* WanderBucketApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WanderBucketApp.swift; sourceTree = "<group>"; };
 		6B8AA1C325C9C39A00E3B782 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -247,6 +249,7 @@
 				6B452DFE25CF4760004C0C54 /* FavoriteButton.swift */,
 				6B846C2325D1A634006F27A1 /* ToDoListCheck.swift */,
 				6B846C3025D1ADC4006F27A1 /* ToDoList.swift */,
+				6B846C4925D2158A006F27A1 /* FinishedButton.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -544,6 +547,7 @@
 				6BE93ABA25D081020082518F /* PageView.swift in Sources */,
 				6BAC47FC25CB93A600C5F7AE /* ForgotPasswordScreen.swift in Sources */,
 				6B452E1525CF657F004C0C54 /* ContentView.swift in Sources */,
+				6B846C4A25D2158A006F27A1 /* FinishedButton.swift in Sources */,
 				6B452DF425CF3529004C0C54 /* BucketList.swift in Sources */,
 				6B56312F25CE2BFE009F34D8 /* ProfileEditor.swift in Sources */,
 				6BDB8C3A25C9D82600174CF2 /* GlobeScreen.swift in Sources */,
