@@ -25,6 +25,9 @@ struct BucketDetail: View {
                     Text(bucket.name)
                         .font(.largeTitle)
                         .foregroundColor(.primary)
+                    Spacer()
+                    FinishedButton(isSet: $modelData.buckets[bucketIndex].isFinished)
+                    Spacer()
                     FavoriteButton(isSet: $modelData.buckets[bucketIndex].isFavorite)
 
                 }

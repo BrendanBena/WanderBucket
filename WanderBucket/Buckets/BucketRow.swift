@@ -28,6 +28,11 @@ struct BucketRow: View {
             }
             Spacer()
             
+            if bucket.isFinished {
+                Image(systemName: "checkmark.circle.fill")
+                    .foregroundColor(.green)
+            }
+            
             if bucket.isFavorite {
                 Image(systemName: "star.fill")
                     .foregroundColor(.yellow)

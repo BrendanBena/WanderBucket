@@ -10,21 +10,21 @@ import SwiftUI
 
 
 struct FinishedButton: View {
-    @Binding var isFinished: Bool
+    @Binding var isSet: Bool
 
     var body: some View {
         Button(action: {
-            isFinished.toggle()
+            isSet.toggle()
         }) {
-            Image(systemName: isFinished ? "task" : "taskCompleted")
-                .foregroundColor(isFinished ? Color.black : Color.gray)
+            Image(systemName: isSet ? "checkmark.circle.fill" : "circle")
+                .foregroundColor(isSet ? Color.green : Color.gray)
         }
     }
 }
 
 struct FinishedButton_Previews: PreviewProvider {
     static var previews: some View {
-        FinishedButton(isFinished: .constant(true))
+        FinishedButton(isSet: .constant(true)) 
     }
     
 }

@@ -20,6 +20,7 @@ struct Bucket: Hashable, Codable, Identifiable {
     var city: String
     var isFavorite: Bool
     var isFeatured: Bool
+    var isFinished: Bool
     var description: String
     
     
